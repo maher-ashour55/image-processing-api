@@ -52,11 +52,11 @@ GET /api/images?filename={name}&width={w}&height={h}
 
 **Parameters:**
 
-| Parameter  | Type   | Description              |
-|------------|--------|--------------------------|
+| Parameter  | Type   | Description                  |
+| ---------- | ------ | ---------------------------- |
 | `filename` | string | Image name without extension |
-| `width`    | number | Desired width in pixels  |
-| `height`   | number | Desired height in pixels |
+| `width`    | number | Desired width in pixels      |
+| `height`   | number | Desired height in pixels     |
 
 **Example:**
 
@@ -65,6 +65,7 @@ http://localhost:3000/api/images?filename=fjord&width=300&height=300
 ```
 
 **Responses:**
+
 - `200` — Returns the resized image
 - `400` — Missing parameters
 - `404` — Image not found
@@ -76,14 +77,14 @@ Place `.jpg` images in the `images/full/` directory. Resized versions are automa
 
 ## Scripts
 
-| Command          | Description                  |
-|------------------|------------------------------|
+| Command          | Description                      |
+| ---------------- | -------------------------------- |
 | `npm run build`  | Compile TypeScript to JavaScript |
-| `npm start`      | Start the production server  |
-| `npm run dev`    | Start development server     |
-| `npm test`       | Run Jasmine tests            |
-| `npm run lint`   | Run ESLint                   |
-| `npm run format` | Format code with Prettier    |
+| `npm start`      | Start the production server      |
+| `npm run dev`    | Start development server         |
+| `npm test`       | Run Jasmine tests                |
+| `npm run lint`   | Run ESLint                       |
+| `npm run format` | Format code with Prettier        |
 
 ## Testing
 
@@ -92,6 +93,7 @@ npm test
 ```
 
 Expected output:
+
 ```
 2 specs, 0 failures
 ```
